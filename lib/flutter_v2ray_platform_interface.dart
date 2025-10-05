@@ -57,4 +57,45 @@ abstract class FlutterV2rayPlatform extends PlatformInterface {
   /// [bypassSubnets] is an optional list of subnets to bypass.
   /// [proxyOnly] is a boolean indicating whether to use proxy-only mode (default is false).
   /// Returns a [Future] that completes when the connection starts.
-  Future<void> 
+  Future<void> startV2Ray({
+    required String remark,
+    required String config,
+    required String notificationDisconnectButtonName,
+    List<String>? blockedApps,
+    List<String>? bypassSubnets,
+    bool proxyOnly = false,
+  }) {
+    throw UnimplementedError('startV2Ray() has not been implemented.');
+  }
+
+  /// Stops the V2Ray connection.
+  /// Returns a [Future] that completes when the connection is stopped.
+  Future<void> stopV2Ray() {
+    throw UnimplementedError('stopV2Ray() has not been implemented.');
+  }
+
+  /// Measures the delay to a V2Ray server using the provided configuration and URL.
+  /// [config] is the V2Ray configuration in JSON format.
+  /// [url] is the server URL to test.
+  /// Returns a [Future] that completes with the delay in milliseconds.
+  Future<int> getServerDelay({required String config, required String url}) {
+    throw UnimplementedError('getServerDelay() has not been implemented.');
+  }
+
+  /// Measures the delay to the currently connected V2Ray server.
+  /// [url] is the server URL to test.
+  /// Returns a [Future] that completes with the delay in milliseconds.
+  Future<int> getConnectedServerDelay(String url) async {
+    throw UnimplementedError(
+      'getConnectedServerDelay() has not been implemented.',
+    );
+  }
+
+  /// Retrieves the version of the V2Ray core.
+  /// Returns a [Future] that completes with a [String] representing the core version.
+  Future<String> getCoreVersion() async {
+    throw UnimplementedError(
+      'getCoreVersion() has not been implemented.',
+    );
+  }
+}
