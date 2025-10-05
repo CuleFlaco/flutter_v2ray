@@ -23,7 +23,7 @@ apply plugin: 'com.android.library'
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace 'dev.amirzr.flutter_v2ray_client'
+        namespace 'dev.amirzr.flutter_v2ray'
     }
 
     compileSdkVersion 34
