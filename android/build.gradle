@@ -23,7 +23,7 @@ apply plugin: 'com.android.library'
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace 'dev.amirzr.flutter_v2ray'
+        namespace 'dev.amirzr.flutter_v2ray_client'
     }
 
     compileSdkVersion 34
@@ -67,7 +67,7 @@ rootProject.allprojects {
     repositories {
         flatDir {
             // Ensure Gradle looks for libv2ray.aar inside this plugin's libs folder
-            dirs project(':flutter_v2ray_client').file('libs')
+            dirs project(':flutter_v2ray').file('libs')
         }
     }
 }
