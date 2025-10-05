@@ -1,11 +1,12 @@
-import 'package:flutter_v2ray_client/model/v2ray_status.dart';
+import 'package:flutter_v2ray/model/v2ray_status.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'flutter_v2ray_method_channel.dart';
 
-/// The interface that implementations of flutter_v2ray_client must implement.
+/// The interface that implementations of flutter_v2ray
+must implement.
 ///
-/// Platform implementations should extend this class rather than implement it as flutter_v2ray_client
+/// Platform implementations should extend this class rather than implement it as flutter_v2ray
 /// does not consider newly added methods to be breaking changes. Extending this class
 /// (using `extends`) ensures that the subclass will get the default implementation, while
 /// platform implementations that `implements` this interface will be broken by newly added methods.
