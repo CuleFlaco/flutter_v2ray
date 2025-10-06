@@ -8,10 +8,10 @@ import 'model/v2ray_status.dart' show V2RayStatus;
 class MethodChannelFlutterV2ray extends FlutterV2rayPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('flutter_v2ray');
+  final methodChannel = const MethodChannel('flutter_v2ray_client');
 
   /// The event channel used to receive status updates from the native platform.
-  final eventChannel = const EventChannel('flutter_v2ray/status');
+  final eventChannel = const EventChannel('flutter_v2ray_client/status');
 
   @override
   Future<void> initializeV2Ray({
